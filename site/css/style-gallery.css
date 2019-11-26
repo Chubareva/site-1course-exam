@@ -1,0 +1,174 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+a {
+    outline: none;
+}
+
+.logo a:hover {
+    color: blue;
+    text-decoration: none;
+
+}
+
+.logo a {
+    color: black;
+}
+
+.menu {
+    width: 100%;
+    height: 100px;
+    background: #91646b;
+    text-align: center;
+    font-weight: bold;
+    /*margin-bottom: 30px;*/
+    font-size: 20px;
+
+
+}
+h1{
+text-align-center;
+color:white;
+}
+.menu-items {
+
+    height: 60px;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.menu-items li {
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.menu-items a {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-items a:hover {
+    color: blue;
+}
+
+.menu {
+    height: 60px;
+}
+
+.banner {
+    background-image: url(images/banner.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 520px;
+}
+
+
+.banner4 {
+
+    background-image: url(images/banner4.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+.gallery {
+    margin-top: 40px;
+}
+
+.gallery p {
+    text-align: center;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 30px;
+    background: #fff;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none;
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+    opacity: 0;
+    font-size: 25px;
+    padding-top: 8px;
+}
+
+#back-to-top.show {
+    opacity: 1;
+}
+
+.networks {
+    text-align: center;
+}
+
+.offcanvas-menu {
+    display: none;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.offcanvas-menu-button {
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    float: right;
+    top: 50%;
+    right: 15px;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.tr-offcanvas-menu.mm-menu.mm-menu_offcanvas.mm-menu_opened{
+    z-index: 999;
+}
+
+
+@media (max-width:992px) {
+    .offcanvas-menu {
+        display: block;
+    }
+
+    .menu-items .menu > li > a {
+        color: #000;
+    }
+    .offcanvas-menu-button {
+        color: #000;
+
+    }
+    .items {
+        visibility: hidden;
+    }
+    .logo {
+        text-align: left;
+    }
+    .menu {
+        height: 100px;
+    }
+    .banner4{
+        height: 130px;
+    }
+    .block{
+        margin-top: 0;
+    }
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+}
